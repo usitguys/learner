@@ -12,6 +12,7 @@ public class BaseClass {
 	
 	
 	public void launchChromeBrowser() {
+		//setup Chrome driver server
 		System.setProperty("webdriver.chrome.driver","/Users/saifurnoman/Documents/driver/chromedriver");    
 		driver=new ChromeDriver();
 	}
