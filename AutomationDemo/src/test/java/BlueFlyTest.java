@@ -9,7 +9,8 @@ public class BlueFlyTest extends BaseClass {
 	@Test
 	public void testBlueFlySignIn() {
 		
-	Assert.assertEquals(signInButtonTrue(), true);		
+		//this is a validation part
+		Assert.assertEquals(signInButtonTrue(), true);		
 		
 	}
 	
