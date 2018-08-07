@@ -5,7 +5,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
 	//this is the webdriver instance
+	
 	WebDriver driver;
+	
 	
 	public By signInButton =By.linkText("SIGN IN");
 	public By submitButton=By.name("websubmit");
@@ -25,6 +27,7 @@ public class BaseClass {
 		
 	}
 	
+	// quit method will close the browser
 	public void quitChrome() {
 		driver.quit();
 		
