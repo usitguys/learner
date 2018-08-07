@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class BaseClass {
-	
+	//this is the webdriver instance
 	WebDriver driver;
 	
 	public By signInButton =By.linkText("SIGN IN");
