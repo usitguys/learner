@@ -11,7 +11,7 @@ public class BlueFlyTest extends BaseClass {
 		Assert.assertEquals(signInButtonTrue(), true);		
 		
 	}
-	//The BeforeClass is used to open up the browser
+	
 	@BeforeClass
 	public void openBrowser() {	
 		openUpBlueFly();
