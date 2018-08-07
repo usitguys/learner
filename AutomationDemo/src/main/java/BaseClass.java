@@ -4,23 +4,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class BaseClass {
-	
+	//this is the webdriver instance
 	WebDriver driver;
 	
 	public By signInButton =By.linkText("SIGN IN");
 	public By submitButton=By.name("websubmit");
-	
+	public By searchButton = By.name("query");
 	
 	public void launchChromeBrowser() {
 		//setup Chrome driver server
-		System.setProperty("webdriver.chrome.driver","/Users/saifurnoman/Documents/driver/chromedriver");    
+		System.setProperty("webdriver.chrome.driver","//Users//mdrubel//Documents//driver//chromedriver");    
 		driver=new ChromeDriver();
 	}
 	
 
 
 	public void openChrome() {
-		launchChromeBrowser();
+		launchChromeBrowser();// Testing 
 		navigateToURL("http://www.facebook.com");
 		
 	}
@@ -45,6 +45,10 @@ public class BaseClass {
 	
 	public boolean signInButtonTrue() {
 		return driver.findElement(signInButton).isDisplayed();
+	}
+
+	public boolean searchButtonTrue() {
+		return driver.findElement(searchButton).isDisplayed();
 	}
 	
 	public void navigateToURL(String URL) {
