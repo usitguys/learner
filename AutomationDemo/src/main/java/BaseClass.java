@@ -20,7 +20,7 @@ public class BaseClass {
 
 
 	public void openChrome() {
-		launchChromeBrowser();
+		launchChromeBrowser();// Testing 
 		navigateToURL("http://www.facebook.com");
 		
 	}
