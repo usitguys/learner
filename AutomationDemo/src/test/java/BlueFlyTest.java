@@ -11,9 +11,7 @@ public class BlueFlyTest extends BaseClass {
 		Assert.assertEquals(signInButtonTrue(), true);		
 		
 	}
-deepu
 
- master
 	
 	@Test
 	public void testBlueFlySearch() {
