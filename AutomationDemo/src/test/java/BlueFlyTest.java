@@ -15,6 +15,12 @@ deepu
 
  master
 	
+	@Test
+	public void testBlueFlySearch() {
+		Assert.assertEquals(searchButtonTrue(), true);
+		
+	}
+	
 	@BeforeClass
 	public void openBrowser() {	
 		openUpBlueFly();

@@ -9,7 +9,7 @@ public class BaseClass {
 	
 	public By signInButton =By.linkText("SIGN IN");
 	public By submitButton=By.name("websubmit");
-	
+	public By searchButton = By.name("query");
 	
 	public void launchChromeBrowser() {
 		//setup Chrome driver server
@@ -45,6 +45,10 @@ public class BaseClass {
 	
 	public boolean signInButtonTrue() {
 		return driver.findElement(signInButton).isDisplayed();
+	}
+
+	public boolean searchButtonTrue() {
+		return driver.findElement(searchButton).isDisplayed();
 	}
 	
 	public void navigateToURL(String URL) {
