@@ -8,20 +8,18 @@ public class BlueFlyTest extends BaseClass {
 	
 	@Test
 	public void testBlueFlySignIn() {
-		
-	Assert.assertEquals(signInButtonTrue(), true);		
+		Assert.assertEquals(signInButtonTrue(), true);		
 		
 	}
-	//kishorda please 
-	
+deepu
+
+ master
 	
 	@BeforeClass
 	public void openBrowser() {	
 		openUpBlueFly();
 		
 	}
-	
-
 	
 	@AfterClass
 	public void closeBrowser() {

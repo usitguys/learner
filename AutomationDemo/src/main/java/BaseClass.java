@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class BaseClass {
-	
+	//this is the webdriver instance
 	WebDriver driver;
 	
 	public By signInButton =By.linkText("SIGN IN");
@@ -12,7 +12,8 @@ public class BaseClass {
 	
 	
 	public void launchChromeBrowser() {
-		System.setProperty("webdriver.chrome.driver","/Users/saifurnoman/Documents/driver/chromedriver");    
+		//setup Chrome driver server
+		System.setProperty("webdriver.chrome.driver","//Users//mdrubel//Documents//driver//chromedriver");    
 		driver=new ChromeDriver();
 	}
 	
