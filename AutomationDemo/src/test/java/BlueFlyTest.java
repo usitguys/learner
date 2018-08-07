@@ -12,6 +12,12 @@ public class BlueFlyTest extends BaseClass {
 		
 	}
 	
+	@Test
+	public void testBlueFlySearch() {
+		Assert.assertEquals(searchButtonTrue(), true);
+		
+	}
+	
 	@BeforeClass
 	public void openBrowser() {	
 		openUpBlueFly();
